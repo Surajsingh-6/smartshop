@@ -15,7 +15,7 @@ function Showcase() {
                 {
                     pics.map((pic, index) => {
                         return (
-                            <div key={index} className='h-20 lg:h-36 aspect-square m-5 border-2'>
+                            <div key={index} className='h-20  lg:h-36 aspect-square m-5 border-2'>
                                 <img src={pic} alt="" className='w-full h-full object-contain rounded-lg  bg-no-repeat bg-cover' />
                             </div>
                         );

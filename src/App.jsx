@@ -5,9 +5,9 @@ import SearchBar from './components/SearchBar'
 import Hero from './components/Hero';
 import Showcase from './components/Showcase';
 function App() {
-  const items = ['Apple', 'Banana', 'Orange', 'Mango', 'Pineapple'];
+  const items = ['Apple', 'Banana', 'Orange', 'Mango', 'Pineapple','umbrella'];
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen custombg'>
       <Navbar />
       <SearchBar data={items} />
       <Hero />

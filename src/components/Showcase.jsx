@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const Showcase = ({ data }) => {
+const Showcase = ({ data, onImageClick }) => {
     return (
-        <div className="w-full h-min">
+        <div className="w-full h-min text-[#f5e6e8]">
             <div className="flex flex-wrap justify-evenly ">
                 {data.length === 0 ? (
                     <p className="text-center text-gray-500">No results found</p>
@@ -15,7 +15,8 @@ const Showcase = ({ data }) => {
                             <img
                                 src={item.Image}
                                 alt={item.Productname}
-                                className="w-full h-full object-cover rounded-lg bg-no-repeat bg-cover"
+                                className="w-full h-full object-cover rounded-lg bg-no-repeat bg-cover cursor-pointer"
+                                onClick={() => onImageClick(item.MAP)} // Trigger the image click handler
                             />
                             <div className="p-2 text-center">
                                 <h3 className="text-lg">{item.Productname}</h3>

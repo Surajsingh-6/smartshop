@@ -3,11 +3,11 @@ import React from "react";
 function Hero() {
     return (
         <div>
-            <div className="w-full h-2/6 ">
+            <div className="w-full max-h-2/6 ">
                 <img
-                    src="./hero.png"
+                    src="./hero.jpg"
                     alt=""
-                    className="bg-no-repeat bg-cover m-auto my-10"
+                    className="bg-no-repeat bg-contain w-5/6  lg:w-1/4 lg:-rotate-90 m-auto my-10"
                 />
             </div>
         </div>

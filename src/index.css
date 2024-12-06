@@ -5,3 +5,9 @@
 .custombg{
     background-color: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
 }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
